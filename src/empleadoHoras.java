@@ -36,6 +36,12 @@ public class empleadoHoras extends empleado {
                 '}';
     }
 
+    @Override
+    public double calcularSalarioFinal() {
+
+        return horasTrabajadas* valorHora;
+    }
+
     public void mostrarInformacion(){
         System.out.println( "id" + id );
         System.out.println("nombre" + nombre);

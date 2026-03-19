@@ -39,6 +39,13 @@ public class empleadoVentas extends empleado{
                 '}';
     }
 
+    @Override
+    public double calcularSalarioFinal() {
+        double comision = totalVentasMes + (porcentajeCocmicion/100);
+        return salarioBase + comision;
+
+    }
+
     public void mostrarInformacion(){
         System.out.println( "id" + id );
         System.out.println("nombre" + nombre);

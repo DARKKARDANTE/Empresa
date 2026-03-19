@@ -1,4 +1,4 @@
-public class empleado {
+public abstract class empleado {
 
     protected String id;
     protected String nombre;
@@ -57,6 +57,7 @@ public class empleado {
                 '}';
     }
 
+    public abstract double calcularSalarioFinal();
 
     public void mostrarInformacion(){
         System.out.println( "id: " + id );

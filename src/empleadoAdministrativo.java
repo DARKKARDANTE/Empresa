@@ -25,6 +25,13 @@ public class empleadoAdministrativo extends empleado {
                 '}';
     }
 
+    @Override
+    public double calcularSalarioFinal() {
+        return salarioBase + bonificacion;
+    }
+
+
+
     public void mostrarInformacion(){
         System.out.println( "id" + id );
         System.out.println("nombre" + nombre);
